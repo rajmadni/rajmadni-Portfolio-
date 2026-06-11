@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>RajMadni Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>RajMadni</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a
+                        href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                        href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a
+                        href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a
+                        href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a
+                        href="#projects">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a
+                        href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#skills" onclick="cancel()">Skills</a>
+                <a href="#services" onclick="cancel()">Services</a>
+                <a href="#projects" onclick="cancel()">Projects</a>
+                <a href="#contact" onclick="cancel()">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container py-5">
+            <div class="row align-items-center min-vh-90">
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="main.png" alt="Hero Image" class="img-fluid hero-img"
+                        style="max-width: 70%; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);">
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="content">
+                        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm
+                            <span>Raj madni</span>
+                        </h1>
+                        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm
+                            a
+                            <span></span>
+                        </div>
+                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Hello! I'm Madni, a
+                            developer and designer with a passion for creating things that live on the internet.
+                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                            My journey into tech is driven by a love for blending clean, efficient code with
+                            compelling visual design to build beautiful and functional applications.</p>
+                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                            Currently pursuing an MCA, I'm always learning and exploring new technologies to push the
+                            boundaries of what's possible.</p>
+                        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                            <a href="https://github.com/rajmadni"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href=""><i class="fa-brands fa-whatsapp"></i></a> -->
+                            <a href="https://www.linkedin.com/in/raj-madni/"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i></a> -->
+                        </div>
+                        <div class="download-btn-container" data-aos="zoom-out-left" data-aos-duration="1000"
+                            data-aos-delay="1300">
+                            <a href="resumee.pdf" download style="display: contents;">
+                                <button type="button">Download CV</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">About <span>Me</span></h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="about-img mx-auto">
+                        <img src="main.png" alt="About RajMadni" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="about-content text-start">
+                        <h3>Professional Web Developer & Designer</h3>
+                        <p>I am RajMadni, a web designer and developer with a passion for building beautiful,
+                            responsive,
+                            and
+                            user-friendly digital experiences. I specialize in HTML, CSS, JavaScript, and modern design
+                            tools to
+                            create high-performing websites.</p>
+                        <div class="row personal-info g-3">
+                            <div class="col-sm-6 info-item"><i class="fa-solid fa-envelope"></i>
+                                <span>rajmadni133@example.com</span>
+                            </div>
+                            <div class="col-sm-6 info-item"><i class="fa-solid fa-phone"></i> <span>+91
+                                    8849365244</span></div>
+                            <div class="col-sm-6 info-item"><i class="fa-solid fa-map-marker-alt"></i>
+                                <span>Vadodara,Gujarat
+                                    IND</span>
+                            </div>
+                            <div class="col-sm-6 info-item"><i class="fa-solid fa-briefcase"></i> <span>Web developer
+                                    & Designer</span></div>
+                        </div>
+                        <div class="row stats-container mt-4 g-3">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="stat-card">
+                                    <h4>1+</h4>
+                                    <p class="mb-0">Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="stat-card">
+                                    <h4>10+</h4>
+                                    <p class="mb-0">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="stat-card">
+                                    <h4>5+</h4>
+                                    <p class="mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">My <span>Skills</span></h2>
+            <div class="row g-4">
+                <!-- Skill 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <h3>HTML5</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 95%; background-color: rgb(109, 67, 0);" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                        <h3>CSS3 & Sass</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 90%; background-color: rgb(109, 67, 0);" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                        <h3>JavaScript</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 85%; background-color: rgb(109, 67, 0);" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-brands fa-bootstrap"></i></div>
+                        <h3>Bootstrap</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 90%; background-color: rgb(109, 67, 0);" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                <!-- Skill 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-solid fa-crop-simple"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 88%; background-color: rgb(109, 67, 0);" aria-valuenow="88"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Web Dev</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 92%; background-color: rgb(109, 67, 0);" aria-valuenow="92"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                </div>
+                <!-- Skill 7 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-solid fa-wind"></i></div>
+                        <h3>Tailwind CSS</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 85%; background-color: rgb(109, 67, 0);" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                <!-- Skill 8 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <h3>Python</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 80%; background-color: rgb(109, 67, 0);" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+                <!-- Skill 9 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>SQL</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 82%; background-color: rgb(109, 67, 0);" aria-valuenow="82"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                </div>
+                <!-- Skill 10 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+                        <h3>Git & GitHub</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 85%; background-color: rgb(109, 67, 0);" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                <!-- Skill 11 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-solid fa-file-code"></i></div>
+                        <h3>TypeScript</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 78%; background-color: rgb(109, 67, 0);" aria-valuenow="78"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                </div>
+                <!-- Skill 12 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="skill-card h-100">
+                        <div class="skill-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>MongoDB</h3>
+                        <div class="progress w-100 my-3" style="height: 8px; background: #e0e0e0;">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 80%; background-color: rgb(109, 67, 0);" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Our <span>Services</span></h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-laptop-code service-icon"></i>
+                        <h3>Web Development</h3>
+                        <p class="mb-0">Building modern, interactive, and high-performance websites customized to meet
+                            your business needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-palette service-icon"></i>
+                        <h3>UI/UX Design</h3>
+                        <p class="mb-0">Designing user-centric, visually stunning wireframes and high-fidelity mockups
+                            for digital products.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                        <h3>App Development</h3>
+                        <p class="mb-0">Creating responsive, cross-platform mobile apps featuring seamless native-like
+                            experiences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-bullhorn service-icon"></i>
+                        <h3>Digital Marketing</h3>
+                        <p class="mb-0">Promoting brands and products online with SEO, social media outreach, and
+                            data-driven ad strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">My <span>Projects</span></h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1: HireStack Online JobPortal -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <div class="project-info">
+                            <h3>HireStack Online JobPortal</h3>
+                            <p>A full-featured job search and recruiting portal built with Python, Django, and
+                                PostgreSQL.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Watch Shop E-commerce -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="project-card h-100">
+                        <div class="project-info">
+                            <h3>Watch Shop E-commerce</h3>
+                            <p>A full-featured e-commerce site built with .NET (C#) and SQL Server.</p>
+                            <div class="project-tags">
+                                <span>.NET</span>
+                                <span>C#</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Library Management System -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="project-card h-100">
+                        <div class="project-info">
+                            <h3>Library Management System</h3>
+                            <p>A web app to manage books and members, built with PHP & MySQL.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Online Voting System -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-card h-100">
+                        <div class="project-info">
+                            <h3>Online Voting System</h3>
+                            <p>A web app to manage books and members, built with PHP & MySQL.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5: Online Book Store -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="project-card h-100">
+                        <div class="project-info">
+                            <h3>Online Book Store</h3>
+                            <p>A web app to manage books and members, built with Bootstrap & Tailwind.</p>
+                            <div class="project-tags">
+                                <span>Bootstrap</span>
+                                <span>Tailwind</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Contact <span>Us</span></h2>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="contact-box">
+                        <h3>Get In Touch</h3>
+                        <p>Have a project in mind, or just want to say hello? Drop me a message, and I will get back to
+                            you as soon as possible.</p>
+                        <div class="contact-details">
+                            <div class="detail-item d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-envelope me-3"></i>
+                                <div>
+                                    <h4 class="mb-0">Email</h4>
+                                    <p class="mb-0">rajmadni133@example.com</p>
+                                </div>
+                            </div>
+                            <div class="detail-item d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-phone me-3"></i>
+                                <div>
+                                    <h4 class="mb-0">Phone</h4>
+                                    <p class="mb-0">+91 8849365244</p>
+                                </div>
+                            </div>
+                            <div class="detail-item d-flex align-items-center">
+                                <i class="fa-solid fa-map-location-dot me-3"></i>
+                                <div>
+                                    <h4 class="mb-0">Address</h4>
+                                    <p class="mb-0">Vadodara,Gujarat IND</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1200">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="mb-3">
+                            <input type="text" class="form-control py-3" placeholder="Your Name" required
+                                style="border: 1px solid rgba(109, 67, 0, 0.25); background: rgba(255, 255, 255, 0.55); border-radius: 10px; font-size: 1rem; outline: none; transition: 0.3s ease;">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control py-3" placeholder="Your Email" required
+                                style="border: 1px solid rgba(109, 67, 0, 0.25); background: rgba(255, 255, 255, 0.55); border-radius: 10px; font-size: 1rem; outline: none; transition: 0.3s ease;">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control py-3" placeholder="Subject" required
+                                style="border: 1px solid rgba(109, 67, 0, 0.25); background: rgba(255, 255, 255, 0.55); border-radius: 10px; font-size: 1rem; outline: none; transition: 0.3s ease;">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control py-3" placeholder="Your Message" rows="5" required
+                                style="border: 1px solid rgba(109, 67, 0, 0.25); background: rgba(255, 255, 255, 0.55); border-radius: 10px; font-size: 1rem; outline: none; transition: 0.3s ease;"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn py-3">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+
+</html>
